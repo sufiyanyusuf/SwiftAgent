@@ -16,7 +16,7 @@ public actor SimulationAdapter: Adapter {
   private let instructions: String
   private let storedTools: [any SwiftAgentTool]
 
-  public nonisolated var tools: [any SwiftAgentTool] {
+  public nonisolated let tools: [any SwiftAgentTool] {
     storedTools
   }
 
